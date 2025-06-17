@@ -38,7 +38,11 @@ function Project() {
     }, [])
     return (
         <div>
+            <h1>{project.team_name}</h1>
+            <h1>{project.project_repo}</h1>
+            <h1>{project.image_link}</h1>
 
+            <a href="/project-submit">Submit or change a project</a>
         </div>
     )
 }

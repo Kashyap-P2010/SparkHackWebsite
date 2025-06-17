@@ -17,8 +17,13 @@ function Team() {
     })
 
     return (
-        <div>
+        <div style={{"marginTop": "20%"}}>
+            <h1>{team.team_name}</h1>
+            <h1>{team.team_count}</h1>
+            <h1>{team.member_names}</h1>
+            <h1>{team.school_name}</h1>
 
+            <a href="/project">See your projects</a>
         </div>
     )
 }

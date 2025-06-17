@@ -5,6 +5,7 @@ import image_divya from '../images/Divyamam_photo.png';
 import image_sudarshan from '../images/sudershan_photo.png';
 import image_swathi from '../images/Swathimam_photo.jpg';
 import image_saanvi from '../Images/saanvi_photo.png';
+import image_yajat from '../Images/Yajat_photo.png';
 
 type TeamMember = {
   id: number;
@@ -30,7 +31,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: 'Yajat Singhal',
     role: 'Design Mentor',
-    imageUrl: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    imageUrl: image_yajat
   },
   {
     id: 4,

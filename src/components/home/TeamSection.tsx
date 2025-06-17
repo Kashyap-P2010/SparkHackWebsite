@@ -1,11 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import image_anshuman from 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0808a0ae1a9994a6c4a40f79d24d6a2d4d5f21a_whatsapp_image_2025-06-17_at_4.04.12_pm.jpeg';
-import image_divya from 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/63d6c32759313961b1c81a14387d7b76d873cff1_divyapic.jpeg';
-import image_sudarshan from 'https://postimg.cc/sv064S5M][img]https://i.postimg.cc/sv064S5M/Sudeeppic.jpg';
-import image_swathi from 'https://postimg.cc/jDw8g5hZ][img]https://i.postimg.cc/jDw8g5hZ/Swathipic.jpg';
-import image_saanvi from 'https://postimg.cc/N50CXb2h][img]https://i.postimg.cc/N50CXb2h/Saanvipic.jpg';
-import image_yajat from 'https://postimg.cc/CdSQhwFx][img]https://i.postimg.cc/CdSQhwFx/Yajatpic.jpg';
 
 type TeamMember = {
   id: number;
@@ -25,37 +19,37 @@ const teamMembers: TeamMember[] = [
     id: 2,
     name: 'Anshuman Verma',
     role: 'Technical Mentor',
-    imageUrl: image_anshuman
+    imageUrl: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0808a0ae1a9994a6c4a40f79d24d6a2d4d5f21a_whatsapp_image_2025-06-17_at_4.04.12_pm.jpeg'
   },
   {
     id: 3,
     name: 'Yajat Singhal',
     role: 'Design Mentor',
-    imageUrl: image_yajat
+    imageUrl: 'https://i.postimg.cc/CdSQhwFx/Yajatpic.jpg'
   },
   {
     id: 4,
-    name: 'Divya Ma\'am',
+    name: "Divya Ma'am",
     role: 'Project Manager',
-    imageUrl: image_divya
+    imageUrl: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/63d6c32759313961b1c81a14387d7b76d873cff1_divyapic.jpeg'
   },
   {
     id: 5,
     name: 'R Sri Sudarshan',
     role: 'Backend Developer',
-    imageUrl: image_sudarshan
+    imageUrl: 'https://i.postimg.cc/sv064S5M/Sudeeppic.jpg'
   },
   {
     id: 6,
-    name: 'Swathi Ma\'am',
-    role: 'Mentor ',
-    imageUrl: image_swathi
+    name: "Swathi Ma'am",
+    role: 'Mentor',
+    imageUrl: 'https://i.postimg.cc/jDw8g5hZ/Swathipic.jpg'
   }, 
   {
     id: 7,
     name: 'Saanvi N',
-    role: 'Designation mentor',
-    imageUrl: image_saanvi
+    role: 'Designation Mentor',
+    imageUrl: 'https://i.postimg.cc/N50CXb2h/Saanvipic.jpg'
   }
 ];
 

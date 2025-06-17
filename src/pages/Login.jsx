@@ -56,11 +56,15 @@ function Login() {
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
                         <input type="text" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}}/>
                     </div>
-                    <label htmlFor="password">Password</label>
-                    <input type="password" placeholder="Password" name="password" id="password" />
-
-                    <button type="submit">Login</button>
-
+                    <label style={{fontWeight:'bold',paddingTop:'60px'}} htmlFor="password">Password</label>
+                    <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}> 
+                        <input type="password" className="form-control" placeholder="Password" name="password" id="password" style={{"width":"50%",}} />
+                    </div>
+                    <br />
+                    <br />
+                    <button type="submit" className="btn" style={{ "marginBottom":"10px",borderRadius:"40px",background:'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',color:'white',fontWeight:'BOLD',paddingLeft:'30PX',paddingRight:'30px',paddingTop:'10PX',paddingBottom:'10px',}}>Login</button>
+                    <br />
+                    <br />
                     {message && <p>{message}</p>}
                 </div>
             </form>

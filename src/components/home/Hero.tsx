@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
             <Link 
               to="/register" 
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:-translate-y-1 opacity-90 hover:scale-105" // made the button ivisible for some time 
+              className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:-translate-y-1 opacity-0 hover:scale-105" // made the button ivisible for some time 
             >
               Register Now
             </Link>

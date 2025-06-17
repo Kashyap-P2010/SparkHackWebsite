@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import image_anshuman from '../images/Anshuman_photo.png';
+import image_anshuman from 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0808a0ae1a9994a6c4a40f79d24d6a2d4d5f21a_whatsapp_image_2025-06-17_at_4.04.12_pm.jpeg';
 import image_divya from '../images/Divyamam_photo.png';
 import image_sudarshan from '../images/sudershan_photo.png';
 import image_swathi from '../images/Swathimam_photo.jpg';

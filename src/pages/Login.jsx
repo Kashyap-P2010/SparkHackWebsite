@@ -33,8 +33,9 @@ function Login() {
                 console.log(data)
                 setMessage(data.message)
                 if (data.logged_in) {
+                    sessionStorage.removeItem("admin_user")
                     sessionStorage.setItem("team", JSON.stringify(data.team))
-                    navigate("/")
+                    navigate("/team")
                 } else {
                     return
                 }

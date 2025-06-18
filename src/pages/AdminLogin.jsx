@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function AdminLogin() {
     const backendLink = "https://wof-backend-06a981c05bce.herokuapp.com"
     const developmentBackendLink = "http://localhost:4444"
+    const [message, setMessage] = useState();
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -27,11 +28,13 @@ function AdminLogin() {
             .then((data) => {
                 if (data.error) {
                     console.log("login incorrect:", data.error)
+                    setMessage(data.error)
                     return
                 }
                 console.log(data)
                 sessionStorage.removeItem("team")
                 sessionStorage.setItem("admin_user", JSON.stringify(data.admin_user))
+                setMessage(data.message)
             })
     }
     return (

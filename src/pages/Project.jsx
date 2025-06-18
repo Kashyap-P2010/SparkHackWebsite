@@ -17,6 +17,7 @@ function Project() {
             navigate("/login")
             return
         }
+        setTeam(teamSession)
         const requestOptions = {
             method: "POST",
             headers: {
@@ -38,13 +39,21 @@ function Project() {
                 console.log(data.project)
             })
     }, [])
-    return (
-        <div>
-            <h1>{project.team_name}</h1>
-            <h1>{project.project_repo}</h1>
-            <h1>{project.image_link}</h1>
 
-            <a href="/project-submit">Submit or change a project</a>
+    return (
+        <div style={{"marginTop": "20%", "backgroundColor": "rgb(100, 100, 100)"}}>
+            {project &&
+                <div>
+                    <h1>Team Name: {project.team_name}</h1>
+                    <h1>Project Repository: <a href={project.project_repo}>{project.project_repo}</a></h1>
+                    <h1>Image Link: <a href={project.image_link}>{project.image_link}</a></h1>
+                </div>
+            }
+
+            <br />
+            <br />
+
+            <a href="/project-submit" style={{"backgroundColor": "#fff"}}>Submit or change a project</a>
         </div>
     )
 }

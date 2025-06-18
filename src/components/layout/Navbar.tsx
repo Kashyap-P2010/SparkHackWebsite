@@ -6,9 +6,22 @@ import { Menu, X, Zap } from 'lucide-react';
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [team, setTeam] = useState(null)
+  const [admin, setAdmin] = useState(null)
   const location = useLocation();
 
   useEffect(() => {
+    let teamSession = sessionStorage.getItem("team")
+    let adminSession = sessionStorage.getItem("admin_user")
+    if (teamSession !== null) {
+      setTeam(JSON.parse(teamSession))
+    } else if (adminSession !== null) {
+      setAdmin(JSON.parse(adminSession))
+    } else {
+      setTeam(null)
+      setAdmin(null)
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 10) {
         setScrolled(true);
@@ -55,7 +68,7 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-8 items-center">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>
-          {/* {user ? (
+          {/* {team || admin && (
             <>
               <NavItem to="/dashboard">Dashboard</NavItem>
               {isAdmin && <NavItem to="/admin">Admin</NavItem>}

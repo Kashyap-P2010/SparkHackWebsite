@@ -16,17 +16,11 @@ function Team() {
             setTeam(teamSession)
             console.log(teamSession)
         }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
         setTeam(JSON.parse(teamSession));
         console.log(team)
     })
-=======
-    }, []) // Fix: Dependency array added
->>>>>>> Stashed changes
-=======
-    }, []) // Fix: Dependency array added
->>>>>>> Stashed changes
+    
 
     return (
         <div style={{"marginTop": "20%"}}>

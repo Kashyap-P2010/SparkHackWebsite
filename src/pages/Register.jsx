@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 
 function Register() {
     const backendLink = "https://wof-backend-06a981c05bce.herokuapp.com"
+    const developmentBackendLink = "http://localhost:4444"
     const [message, setMessage] = useState()
     const navigate = useNavigate()
 
@@ -58,10 +59,10 @@ function Register() {
         <div>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
             <form method="post" onSubmit={handleRegisterSubmit} style={{"marginTop":"5%", "color": "#fff"}}>
-                <div style={{"textAlign": "center", "marginBottom": "20px"}}>
+                <div style={{"textAlign": "center", "marginBottom": "50px", "paddingTop": "50px"}}>
                     <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}} >Register Page</h1>
                 </div>    
-                <div  style={{"textAlign": "center", "marginTop": "6px"}}>  
+                <div  style={{"textAlign": "center",}}>  
                     <label htmlFor="team_name" style={{fontWeight:'bold'}}>Team Name:</label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
                         <input type="text" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}} />

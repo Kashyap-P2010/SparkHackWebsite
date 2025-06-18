@@ -62,7 +62,7 @@ function Register() {
                 <div style={{"textAlign": "center", "marginBottom": "50px"}}>
                     <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}} >Register Page</h1>
                 </div>    
-                <div  style={{"textAlign": "center", "marginTop": "20px"}}>  
+                <div  style={{"textAlign": "center", "paddingTop": "20px"}}>  
                     <label htmlFor="team_name" style={{fontWeight:'bold'}}>Team Name:</label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
                         <input type="text" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}} />

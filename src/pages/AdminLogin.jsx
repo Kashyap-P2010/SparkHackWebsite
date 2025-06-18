@@ -23,7 +23,7 @@ function AdminLogin() {
             },
             body: JSON.stringify(payload),
         }
-        fetch(`${developmentBackendLink}/admin-login`, requestOptions)
+        fetch(`${backendLink}/admin-login`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

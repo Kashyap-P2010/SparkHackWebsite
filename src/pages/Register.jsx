@@ -36,7 +36,7 @@ function Register() {
             }),
         }
 
-        fetch(`${developmentBackendLink}/register`, requestOptions)
+        fetch(`${backendLink}/register`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

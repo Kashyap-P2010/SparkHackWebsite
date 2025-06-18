@@ -29,7 +29,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Divya Ma'am",
+    name: "Divya Sampath",
     role: 'Project Manager',
     imageUrl: 'https://i.postimg.cc/QMpzSgqH/divyamam-photo.png'
   },
@@ -41,7 +41,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 6,
-    name: "Swathi Ma'am",
+    name: "Swathi R",
     role: 'Mentor',
     imageUrl: 'https://i.postimg.cc/jDw8g5hZ/Swathipic.jpg'
   }, 

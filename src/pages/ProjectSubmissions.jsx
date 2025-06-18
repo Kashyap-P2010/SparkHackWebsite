@@ -44,7 +44,7 @@ function ProjectSubmit() {
 
     useEffect(() => {
         let teamSession = sessionStorage.getItem("team")
-        if (team === null) {
+        if (teamSession === null) {
             setMessage("You need to login with your team's account to access this page")
             navigate("/login")
         }

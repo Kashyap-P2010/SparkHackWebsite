@@ -26,7 +26,7 @@ function ProjectSubmit() {
             }),
         }
 
-        fetch(`${backendLink}/project-submission`, requestOptions)
+        fetch(`${developmentBackendLink}/project-submission`, requestOptions)
             .then((response) => {
                 if (response.status === 400) {
                     return

@@ -12,7 +12,7 @@ function Team() {
             setMessage("You need to login with your team's account to access this page")
             navigate("/login")
         }
-        setTeam(teamSession);
+        setTeam(JSON.parse(teamSession));
         console.log(team)
     })
 

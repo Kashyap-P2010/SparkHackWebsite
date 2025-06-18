@@ -12,8 +12,10 @@ function Project() {
     useEffect(() => {
         let teamSession = JSON.parse(sessionStorage.getItem("team"))
         if (teamSession === null) {
+            console.log("null")
             setMessage("Login with your team's account to access this page")
             navigate("/login")
+            return
         }
         const requestOptions = {
             method: "POST",

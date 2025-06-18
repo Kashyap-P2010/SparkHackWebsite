@@ -21,25 +21,25 @@ const Footer: React.FC = () => {
               <SocialIcon icon={<Github size={18} />} href="https://github.com" />
             </div>
           </div>
-          
+
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/about">About</FooterLink>
-              <FooterLink to="/login">Sign In</FooterLink>
-              <FooterLink to="/register">Register</FooterLink>
+              <FooterLink to="/Register">debug</FooterLink>
+              <FooterLink to="/Logout">debug2</FooterLink>
             </ul>
           </div>
-          
+
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <FooterLink to="#">FAQs</FooterLink>
-              
+
             </ul>
           </div>
-          
+
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-gray-400 mb-2">Whitefield Global School</p>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
             
           </div>
         </div>
-        
+
         <div className="border-t border-indigo-900/30 mt-8 pt-8 text-center text-gray-400">
           <p>© {new Date().getFullYear()} HackSpire. All rights reserved.</p>
         </div>

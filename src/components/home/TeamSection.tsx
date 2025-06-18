@@ -31,13 +31,13 @@ const teamMembers: TeamMember[] = [
     id: 4,
     name: "Divya Ma'am",
     role: 'Project Manager',
-    imageUrl: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/63d6c32759313961b1c81a14387d7b76d873cff1_divyapic.jpeg'
+    imageUrl: 'https://i.postimg.cc/QMpzSgqH/divyamam-photo.png'
   },
   {
     id: 5,
     name: 'R Sri Sudarshan',
     role: 'Backend Developer',
-    imageUrl: 'https://i.postimg.cc/sv064S5M/Sudeeppic.jpg'
+    imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
   },
   {
     id: 6,
@@ -47,9 +47,9 @@ const teamMembers: TeamMember[] = [
   }, 
   {
     id: 7,
-    name: 'Saanvi N',
+    name: 'Saanvi Nyamagoud',
     role: 'Designation Mentor',
-    imageUrl: 'https://i.postimg.cc/N50CXb2h/Saanvipic.jpg'
+    imageUrl: 'https://i.postimg.cc/zXJMJP17/Saanvi-Image2025-1.jpg'
   }
 ];
 

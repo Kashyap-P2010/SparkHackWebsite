@@ -11,6 +11,7 @@ function AdminLogout() {
             setMessage("You need to login with admin account to logout of admin page")
         }
         sessionStorage.removeItem("admin_user")
+        sessionStorage.removeItem("team")
         navigate("/")
     })
 

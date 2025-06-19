@@ -7,7 +7,7 @@ function Team() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        let teamSession = JSON.parse(sessionStorage.getItem("team"))
+        let teamSession = sessionStorage.getItem("team")
 
         if (!teamSession) {  // Fix: Proper check
             setMessage("You need to login with your team's account to access this page")
@@ -19,20 +19,20 @@ function Team() {
 
         setTeam(JSON.parse(teamSession));
         console.log(team)
-    })
+    }, [])
     
 
     return (
         <div style={{"marginTop": "20%"}}>
             {team && (
-                <>
-                    <h1>{team.team_name}</h1>
-                    <h1>{team.team_count}</h1>
-                    <h1>{team.member_names}</h1>
-                    <h1>{team.school_name}</h1>
+                <div style={{"color": "#fff"}}>
+                    <h1>Team Name: {team.team_name}</h1>
+                    <h1>Team Count: {team.team_count}</h1>
+                    <h1>Member Count: {team.member_names}</h1>
+                    <h1>School Name: {team.school_name}</h1>
 
-                    <a href="/project">See your projects</a>
-                </>
+                    <a href="/project" style={{"backgroundColor": "rgb(100, 100, 100)"}}>See your projects</a>
+                </div>
             )}
             {message && <h2>{message}</h2>}
         </div>

@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               <FooterLink to="/Team">debug3</FooterLink>
             </ul>
           </div>
-
+          
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">

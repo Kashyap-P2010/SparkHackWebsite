@@ -26,7 +26,7 @@ function Team() {
         <div style={{"marginTop": "5%"}}>
             {team && (
                 <div style={{"color": "#fff"}}>
-                    <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1,rgb(154, 112, 251)',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Team Management</h1>
+                    <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1,rgb(179, 112, 251)',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Team Management</h1>
                     <h1>Team Name: {team.team_name}</h1>
                     <h1>Team Count: {team.team_count}</h1>
                     <h1>Member Count: {team.member_names}</h1>

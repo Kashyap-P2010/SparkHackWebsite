@@ -29,9 +29,9 @@ function Team() {
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"></link>
                     <h1 style={{ textAlign:'center',fontSize: '50px',background: 'linear-gradient(90deg, #6366f1,rgb(153, 77, 235)',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',}}>Team Management</h1>
                     <div style={{textAlign:'center'}}>    
-                        <h1 >Team Name | {team.team_name}</h1>
-                        <h1>Team Count</h1>
-                        <h1>{team.team_count}</h1>
+                        <p >Team Name | {team.team_name}</p>
+                        <p>Team Count</p>
+                        <p>{team.team_count}</p>
                         <h1>Member Count</h1>
                         <h1>{team.member_names}</h1>
                         <h1>School Name</h1>

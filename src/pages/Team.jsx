@@ -23,9 +23,10 @@ function Team() {
     
 
     return (
-        <div style={{"marginTop": "20%"}}>
+        <div style={{"marginTop": "5%"}}>
             {team && (
                 <div style={{"color": "#fff"}}>
+                    <h1>Team Management</h1>
                     <h1>Team Name: {team.team_name}</h1>
                     <h1>Team Count: {team.team_count}</h1>
                     <h1>Member Count: {team.member_names}</h1>

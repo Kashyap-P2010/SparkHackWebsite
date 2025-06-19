@@ -25,15 +25,19 @@ function Team() {
     return (
         <div style={{"marginTop": "5%"}}>
             {team && (
-                <div className="container" style={{"color": "#fff",paddingBottom: "20px"}}>
+                <div className="" style={{"color": "#fff",paddingBottom: "40px"}}>
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"></link>
-                    <h1 style={{ textAlign:'center',fontSize: '60px',background: 'linear-gradient(90deg, #6366f1,rgb(153, 77, 235)',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Team Management</h1>
-                    <h1>Team Name: {team.team_name}</h1>
-                    <h1>Team Count: {team.team_count}</h1>
-                    <h1>Member Count: {team.member_names}</h1>
-                    <h1>School Name: {team.school_name}</h1>
-
-                    <a href="/project" style={{"backgroundColor": "rgb(100, 100, 100)"}}>See your projects</a>
+                    <h1 style={{ textAlign:'center',fontSize: '50px',background: 'linear-gradient(90deg, #6366f1,rgb(153, 77, 235)',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',}}>Team Management</h1>
+                    <div style={{textAlign:'center',fontSize:'50px'}}>    
+                        <p >Team Name | {team.team_name}</p>
+                        <p>Team Count</p>
+                        <p>{team.team_count}</p>
+                        <p>Member Count</p>
+                        <p>{team.member_names}</p>
+                        <p>School Name</p>
+                        <p>{team.school_name}</p>
+                        <a href="/project" style={{}}>See your projects</a>
+                    </div>
                 </div>
             )}
             {message && <h2>{message}</h2>}

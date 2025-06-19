@@ -7,7 +7,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
-import Dashboard from './pages/Dashboard.js';
+import Dashboard from './pages/Dashboard.tsx';
 import Admin from './pages/Admin.jsx';
 import Logout from "./pages/Logout.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";

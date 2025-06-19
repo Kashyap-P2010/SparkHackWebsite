@@ -13,7 +13,7 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: 'P Kashyap',
     role: 'Event Coordinator',
-    imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    imageUrl: 'https://i.postimg.cc/13bYkzJN/Papu-fatty.png'
   },
   {
     id: 2,

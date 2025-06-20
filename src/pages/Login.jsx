@@ -48,7 +48,7 @@ function Login() {
     return (
         <div>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
-            <form method="post" onSubmit={handleLoginSubmit} style={{ "marginTop":"5%", "color": "#fff"}}>
+            <form method="post" onSubmit={handleLoginSubmit} style={{ "marginTop":"80px", "color": "#fff"}}>
                 <div style={{"textAlign": "center", "marginBottom": "20px"}}>    
                     <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Login Page</h1>
                 </div>

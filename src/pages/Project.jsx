@@ -28,7 +28,7 @@ function Project() {
             })
         }
 
-        fetch(`${developmentBackendLink}/project`, requestOptions)
+        fetch(`${backendLink}/project`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

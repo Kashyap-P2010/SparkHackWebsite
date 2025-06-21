@@ -85,7 +85,6 @@ const Navbar: React.FC = () => {
           {team === null && admin === null && (
             <>
               <NavItem to="/login">Sign In</NavItem>
-              <NavItem to="/register">Register</NavItem>
               <NavItem to="/admin-login">Admin Login</NavItem>
             </>
           )}

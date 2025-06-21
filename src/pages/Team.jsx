@@ -37,7 +37,7 @@ function Team() {
                
                         <p style={{paddingBottom:'10px'}}>School Name | {team.school_name}</p>
                         
-                        <a href="/pages/Project" className="btn" style={{background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',color:'white'}}>See your projects</a>
+                        <a href="/Project" className="btn" style={{background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',color:'white'}}>See your projects</a>
                     </div>
                 </div>
             )}

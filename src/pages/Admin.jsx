@@ -26,7 +26,7 @@ function Admin() {
             },
         }
 
-        fetch(`${backendLink}/admin`, requestOptions)
+        fetch(`${developmentBackendLink}/admin`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

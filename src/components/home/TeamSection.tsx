@@ -22,6 +22,12 @@ const teamMembers: TeamMember[] = [
     imageUrl: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0808a0ae1a9994a6c4a40f79d24d6a2d4d5f21a_whatsapp_image_2025-06-17_at_4.04.12_pm.jpeg'
   },
   {
+    id: 5,
+    name: 'R Sri Sudarshan',
+    role: 'Backend Developer',
+    imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
+  },
+  {
     id: 3,
     name: 'Yajat Singhal',
     role: 'Design Mentor',
@@ -32,12 +38,6 @@ const teamMembers: TeamMember[] = [
     name: "Divya Sampath",
     role: 'Project Manager',
     imageUrl: 'https://i.postimg.cc/QMpzSgqH/divyamam-photo.png'
-  },
-  {
-    id: 5,
-    name: 'R Sri Sudarshan',
-    role: 'Backend Developer',
-    imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
   },
   {
     id: 6,

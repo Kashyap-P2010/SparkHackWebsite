@@ -47,10 +47,16 @@ const teamMembers: TeamMember[] = [
   }, 
   {
     id: 7,
+    name: 'Devansh Gaikwad',
+    role: 'Event Manager',
+    imageUrl: ''
+  },
+  {
+    id: 8,
     name: 'Saanvi Nyamagoud',
     role: 'Creative mentor',
     imageUrl: 'https://i.postimg.cc/zXJMJP17/Saanvi-Image2025-1.jpg'
-  }
+  },  
 ];
 
 const container = {

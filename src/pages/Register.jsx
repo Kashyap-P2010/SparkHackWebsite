@@ -8,6 +8,8 @@ function Register() {
     const navigate = useNavigate()
 
     const handleRegisterSubmit = (event) => {
+        sessionStorage.removeItem("team")
+        setMessage("Logged out of current team (if logged in)")
         event.preventDefault()
 
         let team_name = event.target.team_name.value
@@ -18,7 +20,7 @@ function Register() {
         let member_name_list = member_names.split(" ")
         let team_count = member_name_list.length
         if (team_count > 5) {
-            console.log("Too many members. Limit is 5")
+            console.log("Too many members. Limit is 5. Please enter lesser members")
             return
         }
 
@@ -43,7 +45,9 @@ function Register() {
                     console.log(data.error)
                     return
                 }
-                if (data.message === "This team name already exists, pick another one!") {
+                if (data.Message === "This team name already exists, pick another one!") {
+                    setMessage(data.Message)
+                    navigate("/register")
                     return
                 }
                 console.log(data)

@@ -10,9 +10,11 @@ const Navbar: React.FC = () => {
   const [admin, setAdmin] = useState(null)
   const location = useLocation();
 
+  
+  let teamSession = sessionStorage.getItem("team")
+  let adminSession = sessionStorage.getItem("admin_user")
+
   useEffect(() => {
-    let teamSession = sessionStorage.getItem("team")
-    let adminSession = sessionStorage.getItem("admin_user")
     if (teamSession !== null) {
       setTeam(JSON.parse(teamSession))
     } else if (adminSession !== null) {
@@ -32,7 +34,7 @@ const Navbar: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [teamSession, adminSession]);
 
   useEffect(() => {
     
@@ -68,28 +70,35 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-8 items-center">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>
-          {/* {team || admin && (
+          {team !== null && (
             <>
-              <NavItem to="/dashboard">Dashboard</NavItem>
-              {isAdmin && <NavItem to="/admin">Admin</NavItem>}
-              <button
-                onClick={() => signOut()}
+              <NavItem to="/team">Team</NavItem>
+              <NavItem to="/project">Your Project</NavItem>
+              <NavItem to="/project-submit">Submit Project</NavItem>
+              <a href="/logout"
                 className="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors duration-300"
               >
                 Sign Out
-              </button>
+              </a>
             </>
-          ) : (
+          )
+          }
+          {admin !== null && (
             <>
-              <NavItem to="/login">Sign In</NavItem>
-              <Link
-                to="/register"
+              <a href="/admin-logout"
                 className="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white transition-colors duration-300"
               >
-                Register
-              </Link>
+                Sign Out
+              </a>
             </>
-          )} */}
+          )}
+          {team === null && admin === null && (
+            <>
+              <NavItem to="/login">Sign In</NavItem>
+              <NavItem to="/register">Register</NavItem>
+              <NavItem to="/admin-login">Admin Login</NavItem>
+            </>
+          )}
         </ul>
       </div>
 

@@ -1,6 +1,5 @@
     import { useEffect, useState } from "react"
     import { useNavigate } from "react-router-dom"
-    import 'bootstrap/dist/css/bootstrap.min.css';
 
 
     function Project() {
@@ -30,17 +29,17 @@
                 })
             }
 
-            fetch(`${backendLink}/project`, requestOptions)
-                .then((response) => response.json())
-                .then((data) => {
-                    if (data.error) {
-                        console.log("error:", data.error_message)
-                        setMessage(data.error_message)
-                    }
-                    setProject(data.project)
-                    console.log(data.project)
-                })
-        }, [])
+        fetch(`${backendLink}/project`, requestOptions)
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.error) {
+                    console.log("error:", data.error_message)
+                    setMessage(data.error_message)
+                }
+                setProject(data.project)
+                console.log(data.project)
+            })
+    }, [])
 
         return (
             <div style={{paddingTop: '5%', paddingBottom: '5%',textAlign:'center'}} className="container">

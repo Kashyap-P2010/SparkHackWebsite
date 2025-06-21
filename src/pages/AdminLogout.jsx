@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AdminLogout() {
     const navigate = useNavigate();
+    const [message, setMessage] = useState()
 
     useEffect(() => {
         let adminUser = sessionStorage.getItem("admin_user")

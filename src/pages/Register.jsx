@@ -8,6 +8,8 @@ function Register() {
     const navigate = useNavigate()
 
     const handleRegisterSubmit = (event) => {
+        sessionStorage.removeItem("team")
+        setMessage("Logged out of current team (if logged in)")
         event.preventDefault()
 
         let team_name = event.target.team_name.value

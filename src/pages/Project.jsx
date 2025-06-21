@@ -48,7 +48,7 @@
                     {project &&
                         <div style={{color:'white'}}>
                             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
-                            <h1>Team Name </h1><h1>{project.team_name}</h1>
+                            <h1 style={{background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent'}}>Team Name </h1><h2>{project.team_name}</h2>
                             <h1>Project Repository </h1>
                             <a href={project.project_repo}>{project.project_repo}</a>
                             <h1>Image Link </h1>

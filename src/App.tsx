@@ -7,7 +7,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
-import Dashboard from './pages/Dashboard.js';
+import Dashboard from './pages/Dashboard.tsx';
 import Admin from './pages/Admin.jsx';
 import Logout from "./pages/Logout.jsx";
 import AdminLogin from "./pages/AdminLogin.jsx";
@@ -15,6 +15,8 @@ import AdminLogout from "./pages/AdminLogout.jsx";
 import Team from "./pages/Team.jsx";
 import ProjectSubmit from "./pages/ProjectSubmissions.jsx";
 import Project from "./pages/Project.jsx"
+import Volunteer  from "./pages/Volunteer.js";
+import FaqSection from './components/home/FaqSection.tsx';
 // import { AuthProvider } from './context/AuthContext';
 
 function App() {
@@ -50,6 +52,8 @@ function App() {
               <Route path="/logout" element={<Logout />} />
               <Route path="/project-submit" element={<ProjectSubmit />}></Route>
               <Route path="/project" element={<Project />}></Route>
+              <Route path="/volunteer" element={<Volunteer />}></Route>
+              <Route path="/faq" element={<FaqSection />} />
             </Routes>
           </main>
           <Footer />

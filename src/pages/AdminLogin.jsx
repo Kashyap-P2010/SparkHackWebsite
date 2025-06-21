@@ -38,11 +38,24 @@ function AdminLogin() {
             })
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit} method="post" style={{"marginTop": "20%"}}>
-                <input type="text" name="credential" placeholder="username" id="credential" />
-                <input type="password" name="password" placeholder="password" id="password" />
-                <button type="submit">Submit</button>
+        
+        <div className='form-container' style={{"textAlign": "center", "marginTop": "2%", "color": "#fff", "paddingBottom": "90px"}}>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"></link>
+            <form onSubmit={handleSubmit} method="post" style={{"marginTop": "10%"}}>
+                <div style={{"textAlign": "center", "marginBottom": "20px"}}>    
+                    <h1 style={{fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Admin login </h1>
+                </div>
+                <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
+                    <input type="text" className="form-control" placeholder="Admin Username" name="team_name" id="team_name" style={{"width":"50%",}}/><br></br><br></br>
+                </div><br /><br />
+                <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px', height: "56px"}}> 
+                    <input type="password" className="form-control" placeholder="Password" name="password" id="password" style={{"width":"50%",}} />
+                </div>
+                <br />
+                <br />
+                <button type="submit" className="btn" style={{ "marginBottom":"10px",borderRadius:"40px",background:'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',color:'white',fontWeight:'BOLD',paddingLeft:'30PX',paddingRight:'30px',paddingTop:'10PX',paddingBottom:'10px',}}>Login</button>
+                <br />
+                <br />
             </form>
         </div>
     );

@@ -13,13 +13,19 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: 'P Kashyap',
     role: 'Event Coordinator',
-    imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    imageUrl: 'https://i.postimg.cc/13bYkzJN/Papu-fatty.png'
   },
   {
     id: 2,
     name: 'Anshuman Verma',
     role: 'Technical Mentor',
     imageUrl: 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/d0808a0ae1a9994a6c4a40f79d24d6a2d4d5f21a_whatsapp_image_2025-06-17_at_4.04.12_pm.jpeg'
+  },
+  {
+    id: 5,
+    name: 'R Sri Sudarshan',
+    role: 'Backend Developer',
+    imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
   },
   {
     id: 3,
@@ -34,12 +40,6 @@ const teamMembers: TeamMember[] = [
     imageUrl: 'https://i.postimg.cc/QMpzSgqH/divyamam-photo.png'
   },
   {
-    id: 5,
-    name: 'R Sri Sudarshan',
-    role: 'Backend Developer',
-    imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
-  },
-  {
     id: 6,
     name: "Swathi R",
     role: 'Mentor',
@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 7,
     name: 'Saanvi Nyamagoud',
-    role: 'Designation Mentor',
+    role: 'Creative mentor',
     imageUrl: 'https://i.postimg.cc/zXJMJP17/Saanvi-Image2025-1.jpg'
   }
 ];

@@ -13,6 +13,7 @@ function Logout() {
         }
         sessionStorage.removeItem("team")
         sessionStorage.removeItem("admin_user")
+        navigate("/login")
     }, [])
 
     return (

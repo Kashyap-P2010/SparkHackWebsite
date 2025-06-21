@@ -27,17 +27,17 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/about">About</FooterLink>
-              <FooterLink to="/Register">debug</FooterLink>
-              <FooterLink to="/Logout">debug2</FooterLink>
-              <FooterLink to="/Team">debug3</FooterLink>
+              <FooterLink to="/Register">Register</FooterLink>
+              <FooterLink to="/Logout">Login</FooterLink>
+              <FooterLink to="/Team">Team page</FooterLink>
             </ul>
           </div>
           
           <div className="md:col-span-1">
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <FooterLink to="#">FAQs</FooterLink>
-
+              <FooterLink to="/faq">FAQs</FooterLink>
+              <FooterLink to="/volunteer">Volunteer list</FooterLink>
             </ul>
           </div>
 

@@ -30,7 +30,7 @@
                 })
             }
 
-        fetch(`${backendLink}/project`, requestOptions)
+        fetch(`${developmentBackendLink}/project`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

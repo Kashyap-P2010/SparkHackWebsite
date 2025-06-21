@@ -18,7 +18,7 @@ function Register() {
         let member_name_list = member_names.split(" ")
         let team_count = member_name_list.length
         if (team_count > 5) {
-            console.log("Too many members. Limit is 5")
+            console.log("Too many members. Limit is 5. Please enter lesser members")
             return
         }
 

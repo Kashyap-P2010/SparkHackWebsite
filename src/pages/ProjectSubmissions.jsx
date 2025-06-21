@@ -26,7 +26,7 @@ function ProjectSubmit() {
             }),
         }
 
-        fetch(`${developmentBackendLink}/project-submission`, requestOptions)
+        fetch(`${backendLink}/project-submission`, requestOptions)
             .then((response) => {
                 if (response.status === 400) {
                     return
@@ -38,6 +38,7 @@ function ProjectSubmit() {
                     setMessage(data.error)
                     console.log(data.error)
                 }
+                setMessage("Project Submitted")
                 setProject(JSON.stringify(data.project))
             })
     }
@@ -55,6 +56,9 @@ function ProjectSubmit() {
         
         <div className="container" style={{"marginTop": "100px",width: "50%", marginLeft: "auto",marginRight:'auto', padding: "20px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",marginBottom:'50px', borderRadius: "10px"}}>
             <h1 style={{textAlign: 'center',fontSize: '50px',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent'}}>Project Submission</h1>
+            <i style={{"color": "#fff"}}>In case you want to modify an existing project submitted using THIS account, enter the new repository link/image of project and it will automatically
+                update the previous existing project that has been submitted by THIS account
+            </i>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
             <form onSubmit={handleSubmit} method="POST" style={{"marginTop": "5%"}}>
                 <input type="url" className="form-control" placeholder="Project Repository Link" name="project_repo" id="project_repo" />

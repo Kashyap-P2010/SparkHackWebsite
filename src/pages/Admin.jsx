@@ -26,7 +26,7 @@ function Admin() {
             },
         }
 
-        fetch(`${developmentBackendLink}/admin`, requestOptions)
+        fetch(`${backendLink}/admin`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {
@@ -42,7 +42,7 @@ function Admin() {
     console.log("projects:", projects)
     return (
         <div style={{"color": "#fff"}}>
-            <h1 style={{"marginTop": "20%"}}>Admin Page</h1>
+            <h1 style={{"marginTop": "10%"}}>Admin Page</h1>
             <br />
             <h1>Teams</h1>
             <br />

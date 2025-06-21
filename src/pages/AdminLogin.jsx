@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function AdminLogin() {
     const backendLink = "https://wof-backend-06a981c05bce.herokuapp.com"
     const developmentBackendLink = "http://localhost:4444"
     const [message, setMessage] = useState();
+    const navigate = useNavigate()
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -23,7 +25,7 @@ function AdminLogin() {
             },
             body: JSON.stringify(payload),
         }
-        fetch(`${developmentBackendLink}/admin-login`, requestOptions)
+        fetch(`${backendLink}/admin-login`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {
@@ -35,6 +37,7 @@ function AdminLogin() {
                 sessionStorage.removeItem("team")
                 sessionStorage.setItem("admin_user", JSON.stringify(data.admin_user))
                 setMessage(data.message)
+                navigate("/admin")
             })
     }
     return (
@@ -46,7 +49,7 @@ function AdminLogin() {
                     <h1 style={{fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Admin login </h1>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
-                    <input type="text" className="form-control" placeholder="Admin Username" name="team_name" id="team_name" style={{"width":"50%",}}/><br></br><br></br>
+                    <input type="text" className="form-control" placeholder="Admin Username" name="credential" id="credential" style={{"width":"50%",}}/><br></br><br></br>
                 </div><br /><br />
                 <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px', height: "56px"}}> 
                     <input type="password" className="form-control" placeholder="Password" name="password" id="password" style={{"width":"50%",}} />

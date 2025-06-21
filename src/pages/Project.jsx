@@ -1,6 +1,5 @@
     import { useEffect, useState } from "react"
     import { useNavigate } from "react-router-dom"
-    import 'bootstrap/dist/css/bootstrap.min.css';
 
 
     function Project() {
@@ -30,7 +29,7 @@
                 })
             }
 
-        fetch(`${developmentBackendLink}/project`, requestOptions)
+        fetch(`${backendLink}/project`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {

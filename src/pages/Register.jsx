@@ -36,14 +36,16 @@ function Register() {
             }),
         }
 
-        fetch(`${developmentBackendLink}/register`, requestOptions)
+        fetch(`${backendLink}/register`, requestOptions)
             .then((response) => response.json())
             .then((data) => {
                 if (data.error) {
                     console.log(data.error)
                     return
                 }
-                if (data.message === "This team name already exists, pick another one!") {
+                if (data.Message === "This team name already exists, pick another one!") {
+                    setMessage(data.Message)
+                    navigate("/register")
                     return
                 }
                 console.log(data)

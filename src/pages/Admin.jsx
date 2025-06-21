@@ -49,10 +49,10 @@ function Admin() {
             <table>
                 <thead>
                     <tr>
-                        <td>Team Name</td>
-                        <td>Member Names</td>
-                        <td>Team Count</td>
-                        <td>School Name</td>
+                        <td>Team Name</td><br />
+                        <td>Member Names</td><br />
+                        <td>Team Count</td><br />
+                        <td>School Name</td><br />
                     </tr>
                 </thead>
                 <tbody>

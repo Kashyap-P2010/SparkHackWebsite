@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        <ul className="hidden md:flex space-x-8 items-center">
+        <ul className="hidden md:flex space-x-8 items-center Button">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>
           {team !== null && (

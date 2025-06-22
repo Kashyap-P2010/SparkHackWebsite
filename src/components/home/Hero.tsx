@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto"
         >
-          <EventDetail icon={<Calendar className="h-5 w-5 text-indigo-400" />} text="June 30th-1st 2025" />
+          <EventDetail icon={<Calendar className="h-5 w-5 text-indigo-400" />} text="June 30th- July 1st 2025" />
           <EventDetail icon={<MapPin className="h-5 w-5 text-indigo-400" />} text="Whitefield Global School" />
           <EventDetail icon={<Users className="h-5 w-5 text-indigo-400" />} text="Teams of 4 - 5" />
         </motion.div>

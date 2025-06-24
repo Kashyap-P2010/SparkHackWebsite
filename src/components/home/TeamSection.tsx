@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: 'Yajat Singhal',
     role: 'Design Mentor',
-    imageUrl: 'https://i.postimg.cc/CdSQhwFx/Yajatpic.jpg'
+    imageUrl: 'https://i.postimg.cc/HswXpWB0/yajatfatty.png'
   },
   {
     id: 4,

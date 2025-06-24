@@ -28,8 +28,8 @@ function Admin() {
                 if (data.error) {
                     console.log(data.error);
                 }
-                setTeams(data.teams);
-                setProjects(data.projects);
+                setTeams(data.teams ?? []);
+                setProjects(data.projects ?? []);
             });
     }, []);
 

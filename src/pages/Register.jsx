@@ -76,7 +76,7 @@ function Register() {
                     <br />
                     <br />
 
-                    <label style={{fontWeight:'bold'}} htmlFor="member_names">Names of members(separate names with space) </label>
+                    <label style={{fontWeight:'bold'}} htmlFor="member_names">Names of members (separate names with space) </label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>    
                         <input type="text" className="form-control" placeholder="Member Names" name="member_names" id="member_names" style={{"width":"50%",}} />
                     </div>

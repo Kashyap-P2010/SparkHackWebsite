@@ -33,6 +33,8 @@ function Admin() {
             });
     }, []);
 
+    console.log(teams)
+
     return (
         <div className="bg-slate-900 text-white min-h-screen px-8 py-16">
             <h1 className="text-4xl font-bold text-center mb-12">Admin Page</h1>
@@ -70,6 +72,8 @@ function Admin() {
                         <thead className="bg-slate-800 text-left">
                             <tr>
                                 <th className="px-4 py-3 border-b border-gray-600">Team Name</th>
+                                <th className="px-4 py-3 border-b border-gray-600">School Name Name</th>
+                                <th className="px-4 py-3 border-b border-gray-600">Project Name</th>
                                 <th className="px-4 py-3 border-b border-gray-600">Project Repository</th>
                                 <th className="px-4 py-3 border-b border-gray-600">Image Link</th>
                             </tr>
@@ -78,6 +82,8 @@ function Admin() {
                             {projects.map((project) => (
                                 <tr key={project.id} className="hover:bg-slate-800 transition">
                                     <td className="px-4 py-2 border-b border-gray-700">{project.team_name}</td>
+                                    <td className="px-4 py-2 border-b border-gray-700">{project.school_name}</td>
+                                    <td className="px-4 py-2 border-b border-gray-700">{project.project_name}</td>
                                     <td className="px-4 py-2 border-b border-gray-700">
                                         <a href={project.project_repo} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{project.project_repo}</a>
                                     </td>

@@ -15,6 +15,8 @@ function ProjectSubmit() {
         let project_repo = event.target.project_repo.value
         let image_link = event.target.image_link.value
 
+        console.log(team.team_name)
+
         const requestOptions = {
             method: "POST",
             headers: {
@@ -42,6 +44,7 @@ function ProjectSubmit() {
                 }
                 setMessage("Project Submitted")
                 setProject(JSON.stringify(data.project))
+                navigate("/project")
             })
     }
 
@@ -63,7 +66,7 @@ function ProjectSubmit() {
             </i>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
             <form onSubmit={handleSubmit} method="POST" style={{"marginTop": "5%"}}>
-                <input type="url" className="form-control" placeholder="Project Name" name="project_name" id="project_name" />
+                <input type="text" className="form-control" placeholder="Project Name" name="project_name" id="project_name" />
                 <br></br>
                 <input type="url" className="form-control" placeholder="Project Repository Link" name="project_repo" id="project_repo" />
                 <br></br>

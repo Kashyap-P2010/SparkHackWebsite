@@ -11,6 +11,7 @@ function ProjectSubmit() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        let project_name = event.target.project_name.value
         let project_repo = event.target.project_repo.value
         let image_link = event.target.image_link.value
 
@@ -21,6 +22,7 @@ function ProjectSubmit() {
             },
             body: JSON.stringify({
                 team_name: team.team_name,
+                project_name: project_name,
                 project_repo: project_repo,
                 image_link: image_link,
             }),
@@ -61,6 +63,8 @@ function ProjectSubmit() {
             </i>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
             <form onSubmit={handleSubmit} method="POST" style={{"marginTop": "5%"}}>
+                <input type="url" className="form-control" placeholder="Project Name" name="project_name" id="project_name" />
+                <br></br>
                 <input type="url" className="form-control" placeholder="Project Repository Link" name="project_repo" id="project_repo" />
                 <br></br>
                 <input type="url" className="form-control" placeholder="Image of Project(send as link)" name="image_link" id="iamge_link" />

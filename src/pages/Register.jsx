@@ -69,7 +69,7 @@ function Register() {
                 <div  style={{"textAlign": "center",}}>  
                     <label htmlFor="team_name" style={{fontWeight:'bold'}}>Team Name:</label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
-                        <input type="text" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}} />
+                        <input type="text" color="black" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}} />
                     </div>    
                         
 
@@ -78,21 +78,21 @@ function Register() {
 
                     <label style={{fontWeight:'bold'}} htmlFor="member_names">Names of members (separate names with space) </label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>    
-                        <input type="text" className="form-control" placeholder="Member Names" name="member_names" id="member_names" style={{"width":"50%",}} />
+                        <input type="text" color="black" className="form-control" placeholder="Member Names" name="member_names" id="member_names" style={{"width":"50%",}} />
                     </div>
                     <br />
                     <br />
                 
                     <label style={{fontWeight:'bold'}} htmlFor="school_name">School Name:</label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>    
-                        <input type="text" className="form-control"  placeholder="School Name" name="school_name" id="school_name" style={{"width":"50%"}} />
+                        <input type="text" color="black" className="form-control"  placeholder="School Name" name="school_name" id="school_name" style={{"width":"50%"}} />
                     </div>
                     <br />
                     <br />
 
                     <label style={{fontWeight:'bold'}} htmlFor="password">Password:</label>
                     <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
-                        <input type="password" className="form-control" placeholder="Password" name="password" id="password" style={{"width":"50%"}} />
+                        <input type="password" color="black" className="form-control" placeholder="Password" name="password" id="password" style={{"width":"50%"}} />
                     </div>
                     <br />
                     <br />

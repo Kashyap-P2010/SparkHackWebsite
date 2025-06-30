@@ -23,7 +23,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 5,
-    name: 'R Sri Sudarshan ',
+    name: 'R Sri Sudarshan',
     role: 'Backend Developer',
     imageUrl: 'https://i.postimg.cc/TwSfvqZf/sudershan-photo.png'
   },
@@ -35,13 +35,13 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Divya Sampath",
+    name: 'Divya Sampath',
     role: 'Project Manager',
     imageUrl: 'https://i.postimg.cc/QMpzSgqH/divyamam-photo.png'
   },
   {
     id: 6,
-    name: "Swathi R",
+    name: 'Swathi R',
     role: 'Mentor',
     imageUrl: 'https://i.postimg.cc/jDw8g5hZ/Swathipic.jpg'
   }, 
@@ -50,6 +50,12 @@ const teamMembers: TeamMember[] = [
     name: 'Saanvi Nyamagoud',
     role: 'Creative Mentor',
     imageUrl: 'https://i.postimg.cc/zXJMJP17/Saanvi-Image2025-1.jpg'
+  },
+  {
+    id: 8,
+    name: 'Devansh Gaikwad',
+    role: 'Creative Assistant',
+    imageUrl: 'https://i.postimg.cc/BZFG8vNs/Whats-App-Image-2025-06-30-at-10-01-43-7167d575.jpg'
   }
 ];
 
@@ -70,9 +76,6 @@ const item = {
 };
 
 const TeamSection: React.FC = () => {
-  const firstRows = teamMembers.slice(0, 4);
-  const lastRow = teamMembers.slice(4);
-
   return (
     <section className="py-16 px-4">
       <div className="container mx-auto">
@@ -85,29 +88,15 @@ const TeamSection: React.FC = () => {
         >
           Meet Our Team
         </motion.h2>
-        
-        {/* First 4 members in a 4-column grid */}
-        <motion.div 
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8"
-        >
-          {firstRows.map((member) => (
-            <TeamMemberCard key={member.id} member={member} />
-          ))}
-        </motion.div>
 
-        {/* Last 3 members centered using flex */}
         <motion.div 
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="flex justify-center flex-wrap gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          {lastRow.map((member) => (
+          {teamMembers.map((member) => (
             <TeamMemberCard key={member.id} member={member} />
           ))}
         </motion.div>
@@ -121,7 +110,7 @@ const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
     <motion.div 
       variants={item}
       whileHover={{ y: -10, transition: { duration: 0.3 } }}
-      className="bg-slate-800/60 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl border border-indigo-900/30 group w-full max-w-sm"
+      className="bg-slate-800/60 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl border border-indigo-900/30 group w-full max-w-sm mx-auto"
     >
       <div className="relative h-64 overflow-hidden">
         <img 

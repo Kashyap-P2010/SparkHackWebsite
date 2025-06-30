@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 7,
     name: 'Saanvi Nyamagoud',
-    role: 'Creative mentor',
+    role: 'Creative Mentor',
     imageUrl: 'https://i.postimg.cc/zXJMJP17/Saanvi-Image2025-1.jpg'
   }
 ];

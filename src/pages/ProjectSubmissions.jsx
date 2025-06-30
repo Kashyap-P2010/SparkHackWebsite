@@ -103,7 +103,7 @@ function ProjectSubmit() {
               id="image_link"
               className="w-full rounded-md p-3 bg-slate-800 border border-indigo-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               placeholder="https://i.postimg.cc/..."
-              required
+              
             />
           </div>
 
